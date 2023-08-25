@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.player-background{
+    background-color: black;
+    width: 25%;
+    border-radius: 11px;
+    height: 640px;
+}
+.music-img img{
+    width: 100%;
+    margin: 2rem auto;
+    
+}
+.music-img{
+  width: 78%;
+ text-align: center;
+    padding: 4px 0;
+}
+.music-info,
+.music-info i
+{
+    text-align: center;
+    color: white;
+}
