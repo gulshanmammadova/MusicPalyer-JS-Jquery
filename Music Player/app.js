@@ -1,7 +1,6 @@
 $(document).ready(function() {
     var audio=document.getElementById("audio-control");
-    audio.autoplay=true;
-
+  
  $('.buttons .pause').on("click",function(){
 document.querySelector(".buttons .pause").classList.add("d-none");
 document.querySelector(".buttons .play").classList.remove("d-none");
@@ -60,6 +59,9 @@ $('.buttons .play').on("click",function(){
       
       });
       $(".buttons .prew").on("click", function() {
+         document.querySelector(".buttons .play").classList.add("d-none");
+         document.querySelector(".buttons .pause").classList.remove("d-none");
+        
         let id = $(this).attr("data-id");
         let imageSrc=document.querySelector(".music-img img").src;
         let musicSrc=document.querySelector(".audio audio" ).src;
